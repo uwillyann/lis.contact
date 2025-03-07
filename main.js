@@ -15,11 +15,10 @@ function adicionarLinha() {
     const inputNome = document.getElementById('nome');
     const inputNumeroDeTelefone = document.getElementById('numero-de-telefone');
 
-    if( form.includes(inputNome.value)){
+    if( numero.includes(inputNome.value)){
         alert(`O telefone: ${inputNumeroDeTelefone.value} ja foi adicionado`)
     } else{
-        form.push(inputNome.value);
-        notas.push(parseFloat(inputNumeroDeTelefone.value));
+        numero.push(inputNome.value);
 
         let linha = '<tr>';
         linha += `<td>${inputNome.value}</td>`;

@@ -12,13 +12,13 @@ form.addEventListener('submit',function(e){
 });
 
 function adicionarLinha() {
-    const inputNomeAtividade = document.getElementById('nome');
-    const inputNotaAtividade = document.getElementById('numero-de-telefone');
+    const inputNome = document.getElementById('nome');
+    const inputNumeroDeTelefone = document.getElementById('numero-de-telefone');
 
-    if( atividade.includes(inputNomeAtividade.value)){
+    if( form.includes(inputNome.value)){
         alert(`O telefone: ${inputNumeroDeTelefone.value} ja foi adicionado`)
     } else{
-        atividade.push(inputNome.value);
+        form.push(inputNome.value);
         notas.push(parseFloat(inputNumeroDeTelefone.value));
 
         let linha = '<tr>';
